@@ -61,7 +61,7 @@ form > div i
     min-width: 20px;
 }
 
-form > div input:not(#checkbox),
+form > div input:not(#checkbox)
 {
     width: 80%;
     border: none;
