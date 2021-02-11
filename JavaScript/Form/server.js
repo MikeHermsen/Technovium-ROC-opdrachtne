@@ -13,12 +13,4 @@ app.get('/', (req, res) => {
     res.render('login.ejs', { name : 'Mikey_'});
 });
 
-app.get('/login', (req, res) => {
-    res.render('login.ejs');
-});
-
-app.get('/register', (req, res) => {
-    res.render('register.ejs');
-});
-
 app.listen(3000);
