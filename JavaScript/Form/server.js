@@ -10,7 +10,7 @@ app.use(express.urlencoded({extended: false}));
 
 
 app.get('/', (req, res) => {
-    res.render('login.ejs', { name : 'Mikey_'});
+    res.render('forum.ejs', { name : 'Mikey_'});
 });
 
 app.listen(3000);
