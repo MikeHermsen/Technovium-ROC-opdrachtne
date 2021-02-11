@@ -62,18 +62,12 @@ form > div i
 }
 
 form > div input:not(#checkbox),
-form > div select
 {
     width: 80%;
     border: none;
     padding: 5px;
     border-bottom: 1px solid rgba(182, 182, 182, 0.534);
     background-color: var(--brand-bg);
-}
-
-form > div select
-{
-    width: 84%;
 }
 
 form > button
@@ -99,6 +93,17 @@ form > p
     transition: 0.4s color;
     width: 100%;
     text-align: center;
+}
+
+
+@media only screen and (max-width: 750px) /* This will prefent the page from disrubting when going under 750px width */
+{
+
+  .mid-form
+  {
+      width: 80%;
+      margin: 20vh 0 0 10%;
+  }
 }
 
 
