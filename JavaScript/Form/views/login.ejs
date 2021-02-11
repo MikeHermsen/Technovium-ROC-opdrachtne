@@ -1,0 +1,74 @@
+<%# views/login.ejs %>
+
+<%# Dit zorgt ervoor dat dit bestand in de base.ejs word geplaats zodat  
+### Dit kan handig zijn als je meer paginas hebt. Was hiervoor dus niet perse nodig
+#%>
+<% extend('base') %>
+
+
+<div class="cover-page">
+
+    <div class="mid-form">
+
+        <form id="form">
+
+            <div> 
+                <i class="fa fa-user-circle fa-lg"></i> 
+                <input type="text", id="voornaam" name="voornaam" placeholder="voornaam"
+                    title="voornaam moet tussen de 3 & 30 lang zijn!"
+                    required>
+            </div>
+
+            <div> 
+                <i class="fa fa-user fa-lg"></i> 
+                <input type="text", id="achternaam" name="achternaam" placeholder="achternaam"
+                    title="achternaam moet tussen de 3 & 30 lang zijn!"
+                    required>
+            </div>
+
+            <div>
+                <i class="fa fa-street-view fa-lg"></i> 
+                <input type="text", id="straat" name="straat" placeholder="straat"
+                    title="straat moet tussen de 3 & 40 lang zijn!"
+                    required>
+            </div>
+
+            <div>
+                <i class="fa fa-home fa-lg"></i> 
+                <input type="text", id="huisnummer" name="huisnummer" placeholder="huisnummer"
+                    title="huisnummer moet tussen de 1 & 6 lang zijn!"
+                    required>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope fa-lg"></i> 
+                <input type="text" id="postcode" name="postcode" placeholder="postcode"
+                    title="postcode moet 6 lang zijn!"
+                    required>
+            </div>
+
+            <div>
+                <i class="fa fa-building fa-lg"></i> 
+                <input type="text", id="stad" name="stad" placeholder="stad"
+                    title="stad moet tussen de 3 & 30 lang zijn!"
+                    required>
+            </div>
+
+            <div> 
+                <input type="checkbox" id="checkbox" name="checkbox">
+                <i>Nieuwsbrief</i> 
+            </div>
+
+            <button type="submit">Sumbit</button> 
+
+            <p>See more of my projects on <a href="/http://mikeh.202devs.nl/">mikeh.202devs.nl</a></p>
+        
+        </form>
+
+        <div id="on_error">
+            
+        </div>
+
+    </div>
+
+</div>
